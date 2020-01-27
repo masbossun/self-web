@@ -1,0 +1,36 @@
+<script>
+  import * as animateScroll from "svelte-scrollto";
+  import Tailwindcss from "../../Tailwindcss.svelte";
+  export let link = "#";
+  export let text;
+  export let hasShadow = false;
+  export let scrollTo = "";
+
+  import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
+
+  function onClick() {
+    dispatch("click");
+  }
+
+  function scrollToElement() {
+    animateScroll.scrollTo({ element: scrollTo });
+    onClick();
+  }
+</script>
+
+<style>
+  .shadow-button {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16),
+      -5px -5px 10px rgba(225, 225, 225, 0.41);
+  }
+</style>
+
+<Tailwindcss />
+
+<a on:click={scrollToElement} href={link} class="cursor-pointer px-4">
+  <div class="bg-white py-2 px-4 {hasShadow && 'shadow-button'}">
+    <span class="font-sans font-medium text-black text-base">{text}</span>
+  </div>
+</a>
