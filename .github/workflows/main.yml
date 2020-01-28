@@ -16,5 +16,9 @@ jobs:
       uses: actions/checkout@v2
       with: 
         ref: ${{ github.ref }}
-    - name: Check Branch
-      run: echo ${{ github.ref }}
+    - name: Deploy to Firebase
+      uses: w9jds/firebase-action@master
+      with:
+        args: deploy --only hosting
+      env:
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
