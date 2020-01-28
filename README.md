@@ -1,5 +1,7 @@
 # Self Web
 
+![Firebase Hosting Deploy](https://github.com/masbossun/self-web/workflows/Firebase%20Hosting%20Deploy/badge.svg)
+
 built with
 
 - Svelte 3
