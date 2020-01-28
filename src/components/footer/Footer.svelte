@@ -1,5 +1,4 @@
 <script>
-  import Tailwindcss from "../../Tailwindcss.svelte";
   import Content from "../common/Content.svelte";
   import Logo from "../common/Logo.svelte";
   import {
@@ -18,8 +17,6 @@
     margin: 8rem 0;
   }
 </style>
-
-<Tailwindcss />
 
 <footer id="footer">
   <div

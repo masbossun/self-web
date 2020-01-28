@@ -1,7 +1,6 @@
 <script>
   import * as animateScroll from "svelte-scrollto";
 
-  import Tailwindcss from "./Tailwindcss.svelte";
   import Navbar from "./components/navbar/Navbar.svelte";
   import Content from "./components/common/Content.svelte";
   import ProjectOverview from "./components/common/ProjectOverview.svelte";
@@ -12,17 +11,12 @@
 </script>
 
 <style>
-  :global(body) {
-    overflow-x: hidden;
-  }
   .featured-image {
     width: 50rem;
   }
 </style>
 
 <svelte:window bind:scrollY={positionY} />
-<svelte:body />
-<Tailwindcss />
 
 <div class="container mx-auto">
   {#if positionY >= contentHeight * 0.8}

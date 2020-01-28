@@ -1,6 +1,5 @@
 <script>
   import * as animateScroll from "svelte-scrollto";
-  import Tailwindcss from "../../Tailwindcss.svelte";
   export let link = "#";
   export let text;
   export let hasShadow = false;
@@ -26,8 +25,6 @@
       -5px -5px 10px rgba(225, 225, 225, 0.41);
   }
 </style>
-
-<Tailwindcss />
 
 <a on:click={scrollToElement} href={link} class="cursor-pointer px-4">
   <div class="bg-white py-2 px-4 {hasShadow && 'shadow-button'}">

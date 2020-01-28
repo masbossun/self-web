@@ -1,5 +1,4 @@
 <script>
-  import Tailwindcss from "../../Tailwindcss.svelte";
   export let classes = "";
   export let url = "";
   export let src = "";
@@ -11,7 +10,6 @@
 
 </style>
 
-<Tailwindcss />
 <div class="bg-black p-8 -mx-2 lg:ml-32 w-full {classes}">
   <div class="flex flex-col lg:flex-col-reverse lg:w-5/12 lg:py-8 lg:pl-16">
     <span class="font-sans font-bold text-6xl tracking-tighter text-white ">

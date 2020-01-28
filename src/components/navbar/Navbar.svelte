@@ -1,5 +1,4 @@
 <script>
-  import Tailwindcss from "../../Tailwindcss.svelte";
   import { MenuIcon, XIcon } from "svelte-feather-icons";
   import Logo from "../common/Logo.svelte";
   import Navlink from "./Navlink.svelte";
@@ -14,17 +13,12 @@
 </script>
 
 <style>
-  .menu-icon {
-    height: 3rem;
-    width: 3rem;
-  }
+
 </style>
 
-<Tailwindcss />
-
-<div class="flex justify-between items-center {classes}">
+<div class="flex justify-between items-center p-2 {classes}">
   <Logo />
-  <div on:click={toggleMenu} class="flex md:hidden menu-icon cursor-pointer">
+  <div on:click={toggleMenu} class="flex md:hidden cursor-pointer w-8 h-8">
     <MenuIcon />
   </div>
   {#if isMenuOpen}
@@ -36,7 +30,11 @@
           text={'projects'}
           scrollTo={'#projects'} />
         <Navlink text={'blog'} link="https://masbossun.web.id/blog/" />
-        <Navlink on:click={toggleMenu} text={'contact me'} scrollTo={'#footer'} hasShadow={true} />
+        <Navlink
+          on:click={toggleMenu}
+          text={'contact me'}
+          scrollTo={'#footer'}
+          hasShadow={true} />
       </div>
       <button
         on:click={toggleMenu}
