@@ -5,6 +5,18 @@
   import Content from "./components/common/Content.svelte";
   import ProjectOverview from "./components/common/ProjectOverview.svelte";
   import Footer from "./components/footer/Footer.svelte";
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    const animation = bodymovin.loadAnimation({
+      name: "masbossun-logo",
+      container: document.getElementById("logo-container"),
+      renderer: "svg",
+      loop: false,
+      autoplay: true,
+      path: "images/masbossun-lottie.json"
+    });
+  });
 
   let positionY;
   let contentHeight;
