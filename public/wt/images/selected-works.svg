@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44" height="278" viewBox="0 0 44 278">
+    <defs>
+        <filter id="prefix__a" width="150%" height="107.3%" x="-20%" y="-2.9%" filterUnits="objectBoundingBox">
+            <feOffset dx="4" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#prefix__a)">
+        <path fill="#013540" stroke="#FFF" stroke-width="2" d="M1 12H39V262H1z"/>
+        <g transform="translate(8)">
+            <circle cx="12" cy="12" r="11" fill="#013540" stroke="#FFF" stroke-width="2"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M12.43 10.766l1.159-5.064L12 4l-1.546 1.787 1.202 4.979h.773zm-1.718.936l.386-.68-3.779-3.49L5 7.957l.687 2.213 5.025 1.532zm2.576 0l4.982-1.532.73-2.213-2.362-.425-3.736 3.49.386.68zM7.32 16.596l3.78-3.532-.387-.681-5.025 1.532L5 16.128l2.319.468zm9.319 0L19 16.128l-.73-2.213-4.982-1.532-.386.68 3.736 3.533zM12.086 20l1.546-1.787-1.203-4.979h-.773l-1.16 5.064L12.087 20z"/>
+        </g>
+        <g transform="translate(8 250)">
+            <circle cx="12" cy="12" r="11" fill="#013540" stroke="#FFF" stroke-width="2"/>
+            <path fill="#FFF" fill-rule="nonzero" d="M12.43 10.766l1.159-5.064L12 4l-1.546 1.787 1.202 4.979h.773zm-1.718.936l.386-.68-3.779-3.49L5 7.957l.687 2.213 5.025 1.532zm2.576 0l4.982-1.532.73-2.213-2.362-.425-3.736 3.49.386.68zM7.32 16.596l3.78-3.532-.387-.681-5.025 1.532L5 16.128l2.319.468zm9.319 0L19 16.128l-.73-2.213-4.982-1.532-.386.68 3.736 3.533zM12.086 20l1.546-1.787-1.203-4.979h-.773l-1.16 5.064L12.087 20z"/>
+        </g>
+        <text fill="#FFF" font-family="DMSans-Bold, DM Sans" font-size="20" font-weight="bold" letter-spacing="2" transform="rotate(-90 20 137)">
+            <tspan x="-82" y="144">SELECTED WORKS</tspan>
+        </text>
+    </g>
+</svg>

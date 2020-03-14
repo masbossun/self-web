@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+    <g fill="none" fill-rule="evenodd">
+        <path d="M0 0H48V48H0z"/>
+        <path stroke="#F65900" stroke-width="2" d="M10 6L26 6 38 18 38 42 10 42z"/>
+        <path stroke="#F65900" stroke-width="2" d="M38 18L26 18 26 6"/>
+        <g stroke="#FFF" stroke-linecap="square" stroke-width="2">
+            <path d="M0 6.5L16 6.5M0 12.5L16 12.5M0 .5L16 .5" transform="translate(16 23.5)"/>
+        </g>
+    </g>
+</svg>
