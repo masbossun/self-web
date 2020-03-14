@@ -86,6 +86,11 @@ a {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
+code {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
 /**
  * Add the correct font size in all browsers.
  */
@@ -391,6 +396,11 @@ button {
  * 'mono' font family.
  */
 
+
+code {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 /**
  * Make replaced elements `display: block` by default as that's
  * the behavior you want almost all of the time. Inspired by
@@ -606,6 +616,10 @@ img {
   margin-top: 1.5rem;
 }
 
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -618,6 +632,10 @@ img {
   margin-left: 3rem;
 }
 
+.mt-16 {
+  margin-top: 4rem;
+}
+
 .mr-16 {
   margin-right: 4rem;
 }
@@ -628,10 +646,6 @@ img {
 
 .mb-24 {
   margin-bottom: 6rem;
-}
-
-.mt-48 {
-  margin-top: 12rem;
 }
 
 .mt-64 {
@@ -732,12 +746,21 @@ img {
   left: 0;
 }
 
+.inset-x-0 {
+  right: 0;
+  left: 0;
+}
+
 .top-0 {
   top: 0;
 }
 
 .right-0 {
   right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
 }
 
 .text-left {
@@ -798,6 +821,10 @@ img {
 
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .truncate {
@@ -904,6 +931,10 @@ img {
     margin-right: 5rem;
   }
 
+  .lg\:mr-24 {
+    margin-right: 6rem;
+  }
+
   .lg\:mb-48 {
     margin-bottom: 12rem;
   }
@@ -924,6 +955,14 @@ img {
 
   .lg\:pb-32 {
     padding-bottom: 8rem;
+  }
+
+  .lg\:right-0 {
+    right: 0;
+  }
+
+  .lg\:left-auto {
+    left: auto;
   }
 
   .lg\:grid-cols-2 {
